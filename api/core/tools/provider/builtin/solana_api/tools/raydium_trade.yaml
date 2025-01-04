@@ -1,0 +1,68 @@
+identity:
+  name: raydium_trade_tool
+  author: GeoAI
+  label:
+    en_US: Raydium Trade Tool
+    zh_Hans: Raydium 交易工具
+description:
+  human:
+    en_US: Perform buy and sell operations on Raydium liquidity pools.
+    zh_Hans: 在Raydium流动性池上执行买卖操作。
+  llm: Perform buy and sell operations on Raydium liquidity pools.
+parameters:
+  - name: action
+    type: string
+    required: true
+    llm_description: The action to perform, either 'buy' or 'sell'.
+    form: llm
+    label:
+      en_US: Action
+      zh_Hans: 操作
+    human_description:
+      en_US: The action to perform, either 'buy' or 'sell'.
+      zh_Hans: 要执行的操作，'buy' 或 'sell'。
+  - name: pair_address
+    type: string
+    required: true
+    llm_description: The address of the Raydium pair to trade on.
+    form: llm
+    label:
+      en_US: Pair Address
+      zh_Hans: 交易对地址
+    human_description:
+      en_US: The address of the Raydium pair to trade on.
+      zh_Hans: 要交易的Raydium交易对地址。
+  - name: amount
+    type: number
+    required: true
+    llm_description: The amount of SOL or tokens to trade.
+    form: llm
+    label:
+      en_US: Amount
+      zh_Hans: 数量
+    human_description:
+      en_US: The amount of SOL or tokens to trade.
+      zh_Hans: 要交易的SOL或代币数量。
+  - name: slippage
+    type: number
+    required: false
+    default: 5
+    llm_description: The allowed slippage percentage.
+    form: llm
+    label:
+      en_US: Slippage
+      zh_Hans: 滑点
+    human_description:
+      en_US: The allowed slippage percentage.
+      zh_Hans: 允许的滑点百分比。
+  - name: private_key
+    type: string
+    required: true
+    llm_description: The private key of the wallet to sign the transaction.
+    form: llm
+    label:
+      en_US: Private Key
+      zh_Hans: 私钥
+    human_description:
+      en_US: The private key of the wallet to sign the transaction.
+      zh_Hans: 用于签署交易的钱包私钥。

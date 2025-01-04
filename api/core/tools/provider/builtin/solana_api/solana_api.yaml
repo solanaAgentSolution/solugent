@@ -1,0 +1,26 @@
+identity:
+  author: GeoAI
+  name: solana_api
+  label:
+    en_US: Solana API
+    zh_Hans: Solana API
+  description:
+    en_US: A module for interacting with the Solana blockchain.
+    zh_Hans: 用于与Solana区块链交互的模块。
+  icon: icon.png
+  tags:
+    - productivity
+credentials_for_provider:
+  solana_rpc_url:
+    type: text-input
+    required: true
+    label:
+      en_US: Solana RPC URL
+      zh_Hans: Solana RPC URL
+    placeholder:
+      en_US: Please input your Solana RPC URL
+      zh_Hans: 请输入你的 Solana RPC URL
+    help:
+      en_US: Get your Solana RPC URL from Solana or a Solana RPC provider.
+      zh_Hans: 从Solana或Solana RPC提供商获取您的Solana RPC URL。
+    url: https://docs.solana.com/developing/clients/jsonrpc-api

@@ -1,0 +1,56 @@
+identity:
+  name: solana_transfer
+  author: Your Name
+  label:
+    en_US: Solana Transfer
+    zh_Hans: Solana 转账
+description:
+  human:
+    en_US: Transfer SOL from one Solana account to another.
+    zh_Hans: 从一个Solana账户转账token到另一个账户。
+  llm: Transfer SOL from one Solana account to another.
+parameters:
+  - name: private_key
+    type: string
+    required: true
+    llm_description: The private key of the account from which SOL will be transferred.
+    form: form
+    label:
+      en_US: Sender's Account
+      zh_Hans: 发送者账户
+    human_description:
+      en_US: The account from which SOL will be transferred.
+      zh_Hans: 将要转的token的账户。
+  - name: to_account
+    type: string
+    required: true
+    llm_description: The account to which SOL will be transferred.
+    form: llm
+    label:
+      en_US: Recipient's Account
+      zh_Hans: 接收者账户
+    human_description:
+      en_US: The account to which SOL will be transferred.
+      zh_Hans: 将要接收的账户。
+  - name: amount
+    type: number
+    required: true
+    llm_description: The amount of SOL to transfer.
+    form: llm
+    label:
+      en_US: Amount
+      zh_Hans: 金额
+    human_description:
+      en_US: The amount of SOL to transfer.
+      zh_Hans: 要转账的token数量。
+  - name: mint
+    type: string
+    required: false
+    llm_description: The mint address of the token to transfer. If not provided, the transfer will be in SOL.
+    form: llm
+    label:
+      en_US: Token Mint Address
+      zh_Hans: 代币地址
+    human_description:
+      en_US: The mint address of the token to transfer.
+      zh_Hans: 要转账的代币的地址。

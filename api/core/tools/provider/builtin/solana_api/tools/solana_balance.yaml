@@ -1,0 +1,45 @@
+identity:
+  name: solana_balance
+  author: GeoAI
+  label:
+    en_US: Solana Balance Tool
+    zh_Hans: Solana 余额工具
+description:
+  human:
+    en_US: Check the balance of a specified Solana account.
+    zh_Hans: 检查指定Solana账户的余额。
+  llm: Check the balance of a specified Solana account.
+parameters:
+  - name: account
+    type: string
+    required: true
+    llm_description: The Solana account address to check the balance for.
+    form: llm
+    label:
+      en_US: Account Address
+      zh_Hans: 账户地址
+    human_description:
+      en_US: The Solana account address to check the balance for.
+      zh_Hans: 要检查余额的Solana账户地址。
+  - name: token_address
+    type: string
+    required: false
+    llm_description: The token address to check the balance for. If not provided, the balance of SOL will be checked.
+    form: llm
+    label:
+      en_US: Token Address
+      zh_Hans: 代币地址
+    human_description:
+      en_US: The token address to check the balance for.
+      zh_Hans: 要检查余额的代币地址。
+  - name: commitment
+    type: string
+    required: false
+    default: "confirmed"
+    form: form
+    label:
+      en_US: Commitment Level
+      zh_Hans: 确认级别
+    human_description:
+      en_US: The level of commitment for the balance query.
+      zh_Hans: 余额查询的确认级别。
