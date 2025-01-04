@@ -44,22 +44,6 @@
                     "app": {
                         "icon": "🤖",
                         "icon_background": "#FFEAD5",
-                        "id": "f3303a7d-a81c-404e-b401-1f8711c998c1",
-                        "mode": "advanced-chat",
-                        "name": "Workflow Planning Assistant "
-                    },
-                    "app_id": "f3303a7d-a81c-404e-b401-1f8711c998c1",
-                    "category": "Workflow",
-                    "copyright": null,
-                    "description": "An assistant that helps you plan and select the right node for a workflow (V0.6.0).  ",
-                    "is_listed": true,
-                    "position": 4,
-                    "privacy_policy": null
-                },
-                {
-                    "app": {
-                        "icon": "🤖",
-                        "icon_background": "#FFEAD5",
                         "id": "cae337e6-aec5-4c7b-beca-d6f1a808bd5e",
                         "mode": "chat",
                         "name": "Python bug fixer"
@@ -150,22 +134,6 @@
                     "description": "Basic Workflow Template, A chatbot with a knowledge base. ",
                     "is_listed": true,
                     "position": 4,
-                    "privacy_policy": null
-                },
-                {
-                    "app": {
-                        "icon": "🤖",
-                        "icon_background": "#FFEAD5",
-                        "id": "dd5b6353-ae9b-4bce-be6a-a681a12cf709",
-                        "mode": "workflow",
-                        "name": "Email Assistant Workflow "
-                    },
-                    "app_id": "dd5b6353-ae9b-4bce-be6a-a681a12cf709",
-                    "category": "Workflow",
-                    "copyright": null,
-                    "description": "A multifunctional email assistant capable of summarizing, replying, composing, proofreading, and checking grammar.",
-                    "is_listed": true,
-                    "position": 5,
                     "privacy_policy": null
                 }
             ]
