@@ -30,6 +30,11 @@ export const BLOCKS: Block[] = [
     title: 'Direct Answer',
   },
   {
+    classification: BlockClassificationEnum.QuestionUnderstand,
+    type: BlockEnum.QuestionClassifier,
+    title: 'Question Classifier',
+  },
+  {
     classification: BlockClassificationEnum.Logic,
     type: BlockEnum.IfElse,
     title: 'IF/ELSE',

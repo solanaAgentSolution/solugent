@@ -1,5 +1,5 @@
 'use client'
-import { RiAppsFill, RiChatSmileAiFill, RiExchange2Fill, RiPassPendingFill, RiQuillPenAiFill, RiSpeakAiFill, RiStickyNoteAddLine, RiTerminalBoxFill, RiThumbUpFill } from '@remixicon/react'
+import { RiAppsFill, RiChatSmileAiFill, RiExchange2Fill, RiSpeakAiFill, RiStickyNoteAddLine, RiTerminalBoxFill, RiThumbUpFill } from '@remixicon/react'
 import { useTranslation } from 'react-i18next'
 import classNames from '@/utils/classnames'
 import Divider from '@/app/components/base/divider'
@@ -9,7 +9,7 @@ export enum AppCategories {
   ASSISTANT = 'Assistant',
   AGENT = 'Agent',
   PROGRAMMING = 'Programming',
-  WORKFLOW = 'Workflow'
+  WORKFLOW = 'Workflow',
 }
 
 type SidebarProps = {
@@ -30,7 +30,6 @@ export default function Sidebar({ current, onClick, onCreateFromBlank }: Sidebar
       <CategoryItem category={AppCategories.AGENT} active={current === AppCategories.AGENT} onClick={onClick} />
       <CategoryItem category={AppCategories.PROGRAMMING} active={current === AppCategories.PROGRAMMING} onClick={onClick} />
       <CategoryItem category={AppCategories.WORKFLOW} active={current === AppCategories.WORKFLOW} onClick={onClick} />
-      <CategoryItem category={AppCategories.WRITING} active={current === AppCategories.WRITING} onClick={onClick} />
     </ul>
     <Divider bgStyle='gradient' />
     <div className='px-3 py-1 flex items-center gap-1 text-text-tertiary cursor-pointer' onClick={onCreateFromBlank}>
@@ -73,13 +72,11 @@ function AppCategoryIcon({ category }: AppCategoryIconProps) {
   if (category === AppCategories.AGENT)
     return <RiSpeakAiFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
   if (category === AppCategories.ASSISTANT)
-    return <RiPassPendingFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
+    return <RiChatSmileAiFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
   if (category === AppCategories.PROGRAMMING)
     return <RiTerminalBoxFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
   if (category === AppCategories.RECOMMENDED)
     return <RiThumbUpFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
-  if (category === AppCategories.WRITING)
-    return <RiQuillPenAiFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
   if (category === AppCategories.WORKFLOW)
     return <RiExchange2Fill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
   return <RiAppsFill className='w-3.5 h-3.5 text-components-avatar-shape-fill-stop-100' />
