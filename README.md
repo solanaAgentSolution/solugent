@@ -21,7 +21,8 @@ After running, you can access the geo dashboard in your browser at [http://local
 
 ## Key features
 **1. Workflow**: 
-  Build and test powerful AI workflows on a visual canvas, leveraging all the following features and beyond.
+  Build and test powerful AI workflows on a visual canvas, leveraging all the following features and beyond. Look at the picture below to see how easy it is to create a solana RPC workflow in Geo.
+  ![workflow](images/workflow-demo.png)
 
 
 **3. Prompt IDE**: 
@@ -33,12 +34,9 @@ After running, you can access the geo dashboard in your browser at [http://local
 **5. Agent capabilities**: 
   You can define agents based on LLM Function Calling or ReAct, and add pre-built or custom tools for the agent. geo provides 50+ built-in tools for AI agents, such as Google Search, DALL·E, Stable Diffusion and WolframAlpha.
 
-**6. LLMOps**: 
-  Monitor and analyze application logs and performance over time. You could continuously improve prompts, datasets, and models based on production data and annotations.
-
-**7. Backend-as-a-Service**: 
-  All of geo's offerings come with corresponding APIs, so you could effortlessly integrate geo into your own business logic.
-
+**6. Custom Tools**:
+  You can create custom tools for your agents easily.
+  ![custom-tools](images/custom-tools.png)
 
 ## Using geo
 
