@@ -21,13 +21,16 @@ class SolanaBalanceTool(BuiltinTool):
         account = Pubkey.from_string(account)
         client = Client(solana_rpc_url)
         try:
+            output_text = ""
             if token_address:
                 opts = TokenAccountOpts(mint=Pubkey.from_string(token_address))
                 balance = client.get_token_accounts_by_owner_json_parsed(owner=account, opts=opts, commitment=commitment)
                 balance_value = balance.value[0].account.data.parsed['info']['tokenAmount']['uiAmount']
+                output_text = f"Balance for {account}: {balance_value} {token_address}"
             else:
                 balance = client.get_balance(account, commitment=commitment)
                 balance_value = balance.value / 10**9
-            return self.create_text_message(text=f"Balance for {account}: {balance_value} SOL")
+                output_text = f"Balance for {account}: {balance_value} SOL"
+            return self.create_text_message(text=output_text)
         except Exception as e:
             return self.create_text_message(text=f"Error fetching balance: {str(e)}")

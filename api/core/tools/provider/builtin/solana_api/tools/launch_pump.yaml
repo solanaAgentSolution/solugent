@@ -1,0 +1,136 @@
+identity:
+  name: launch_pump_tool
+  author: GeoAI
+  label:
+    en_US: Launch Pump Tool
+    zh_Hans: 启动 Pump 工具
+description:
+  human:
+    en_US: Launch a new token on Pump.fun.
+    zh_Hans: 在 Pump.fun 上启动一个新代币。
+  llm: Launch a new token on Pump.fun.
+parameters:
+  - name: token_name
+    type: string
+    required: true
+    llm_description: The name of the token to launch.
+    form: llm
+    label:
+      en_US: Token Name
+      zh_Hans: 代币名称
+    human_description:
+      en_US: The name of the token to launch.
+      zh_Hans: 要启动的代币名称。
+  - name: token_ticker
+    type: string
+    required: true
+    llm_description: The ticker symbol of the token.
+    form: llm
+    label:
+      en_US: Token Ticker
+      zh_Hans: 代币符号
+    human_description:
+      en_US: The ticker symbol of the token.
+      zh_Hans: 代币符号。
+  - name: description
+    type: string
+    required: true
+    llm_description: The description of the token.
+    form: llm
+    label:
+      en_US: Description
+      zh_Hans: 描述
+    human_description:
+      en_US: The description of the token.
+      zh_Hans: 代币描述。
+  - name: image_url
+    type: string
+    required: true
+    llm_description: The URL of the token image.
+    form: llm
+    label:
+      en_US: Image URL
+      zh_Hans: 图片 URL
+    human_description:
+      en_US: The URL of the token image.
+      zh_Hans: 代币图片 URL。
+  - name: private_key
+    type: string
+    required: true
+    llm_description: The private key of the wallet to sign the transaction.
+    form: llm
+    label:
+      en_US: Private Key
+      zh_Hans: 私钥
+    human_description:
+      en_US: The private key of the wallet to sign the transaction.
+      zh_Hans: 用于签署交易的钱包私钥。
+  - name: initial_liquidity_sol
+    type: number
+    required: false
+    default: 1.0
+    llm_description: The initial liquidity in SOL.
+    form: llm
+    label:
+      en_US: Initial Liquidity (SOL)
+      zh_Hans: 初始流动性 (SOL)
+    human_description:
+      en_US: The initial liquidity in SOL.
+      zh_Hans: 初始流动性 (SOL)。
+  - name: slippage_bps
+    type: number
+    required: false
+    default: 500
+    llm_description: The allowed slippage in basis points.
+    form: llm
+    label:
+      en_US: Slippage (BPS)
+      zh_Hans: 滑点 (BPS)
+    human_description:
+      en_US: The allowed slippage in basis points.
+      zh_Hans: 允许的滑点 (BPS)。
+  - name: priority_fee
+    type: number
+    required: false
+    default: 0
+    llm_description: The priority fee for the transaction.
+    form: llm
+    label:
+      en_US: Priority Fee
+      zh_Hans: 优先费用
+    human_description:
+      en_US: The priority fee for the transaction.
+      zh_Hans: 交易的优先费用。
+  - name: twitter
+    type: string
+    required: false
+    llm_description: The Twitter handle for the token.
+    form: llm
+    label:
+      en_US: Twitter
+      zh_Hans: 推特
+    human_description:
+      en_US: The Twitter handle for the token.
+      zh_Hans: 代币的推特账号。
+  - name: telegram
+    type: string
+    required: false
+    llm_description: The Telegram handle for the token.
+    form: llm
+    label:
+      en_US: Telegram
+      zh_Hans: 电报
+    human_description:
+      en_US: The Telegram handle for the token.
+      zh_Hans: 代币的电报账号。
+  - name: website
+    type: string
+    required: false
+    llm_description: The website for the token.
+    form: llm
+    label:
+      en_US: Website
+      zh_Hans: 网站
+    human_description:
+      en_US: The website for the token.
+      zh_Hans: 代币的网站。

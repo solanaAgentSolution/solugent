@@ -23,8 +23,8 @@ parameters:
       zh_Hans: 要检查余额的Solana账户地址。
   - name: token_address
     type: string
-    required: false
-    llm_description: The token address to check the balance for. If not provided, the balance of SOL will be checked.
+    required: true
+    llm_description: The token address to check the balance for.
     form: llm
     label:
       en_US: Token Address

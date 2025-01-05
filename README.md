@@ -1,3 +1,6 @@
+Our Official Website: [Geo AI Power](https://geo.geoaipower.com)
+Don't trust any other website that claims to be us.
+
 Geo is an open-source LLM app development platform. Its intuitive interface combines agentic AI workflow, RAG pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype to production. 
 
 ## Quick start

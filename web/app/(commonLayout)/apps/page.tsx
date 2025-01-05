@@ -22,9 +22,9 @@ const AppList = () => {
           <Link className={style.socialMediaLink} target='_blank' rel='noopener noreferrer' href='https://github.com/geoaipower/geo'>
             <RiGithubFill className='w-5 h-5 text-text-tertiary' />
           </Link>
-          <Link className={style.socialMediaLink} target='_blank' rel='noopener noreferrer' href='https://discord.gg/FngNHpbcY71'>
+          {/* <Link className={style.socialMediaLink} target='_blank' rel='noopener noreferrer' href=''>
             <RiDiscordFill className='w-5 h-5 text-text-tertiary' />
-          </Link>
+          </Link> */}
         </div>
       </footer>}
     </div >

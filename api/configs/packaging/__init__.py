@@ -8,8 +8,8 @@ class PackagingInfo(BaseSettings):
     """
 
     CURRENT_VERSION: str = Field(
-        description="geo version",
-        default="0.14.2",
+        description="GeoAI version",
+        default="0.1.0",
     )
 
     COMMIT_SHA: str = Field(
