@@ -1,0 +1,49 @@
+identity:
+  name: swarms_query_prompt
+  author: GeoAI
+  label:
+    en_US: Swarms Query Prompt
+description:
+  human:
+    en_US: Fetch all prompts from swarms.world with optional filters.
+  llm: Fetch all prompts from swarms.world with optional filters.
+parameters:
+  - name: name
+    type: string
+    required: false
+    llm_description: Substring to match against the prompt name (case-insensitive).
+    form: llm
+    label:
+      en_US: Name
+    human_description:
+      en_US: Optional substring to filter prompt names.
+
+  - name: tag
+    type: string
+    required: false
+    llm_description: A comma-separated list of tags to filter prompts by (case-insensitive).
+    form: llm
+    label:
+      en_US: Tag
+    human_description:
+      en_US: Optional comma-separated tags to filter prompts.
+
+  - name: use_case
+    type: string
+    required: false
+    llm_description: Substring to match against the use case titles in prompts (case-insensitive).
+    form: llm
+    label:
+      en_US: Use Case
+    human_description:
+      en_US: Optional substring to filter inside use case titles.
+
+  - name: use_case_description
+    type: string
+    required: false
+    llm_description: Substring to match against the use case descriptions (case-insensitive).
+    form: llm
+    label:
+      en_US: Use Case Description
+    human_description:
+      en_US: Optional substring to filter inside use case descriptions.

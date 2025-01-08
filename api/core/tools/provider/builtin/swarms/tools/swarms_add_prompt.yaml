@@ -1,0 +1,64 @@
+identity:
+  name: swarms_add_prompt
+  author: GeoAI
+  label:
+    en_US: Swarms Add Prompt
+    zh_Hans: Swarms 添加 Prompt
+description:
+  human:
+    en_US: Add a prompt to swarms.world.
+  llm: Add a prompt to swarms.world.
+parameters:
+  - name: name
+    type: string
+    required: true
+    llm_description: The name of the prompt to add.
+    form: llm
+    label:
+      en_US: Prompt Name
+    human_description:
+      en_US: The name of the prompt being added.
+
+  - name: prompt
+    type: string
+    required: true
+    llm_description: The text of the prompt to add.
+    form: llm
+    label:
+      en_US: Prompt Text
+    human_description:
+      en_US: The text content of the prompt to add.
+
+  - name: description
+    type: string
+    required: false
+    llm_description: The description of the prompt.
+    form: llm
+    label:
+      en_US: Description
+    human_description:
+      en_US: The description of the prompt.
+
+  - name: tags
+    type: string
+    required: false
+    llm_description: The tags associated with the prompt.
+    form: llm
+    label:
+      en_US: Tags
+    human_description:
+      en_US: Any tags for the prompt, separated by commas.
+
+  - name: use_cases
+    type: string
+    required: false
+    llm_description: >
+      A list of use cases for the prompt. in the format of json string. like '[
+      {"title": "Use case 1", "description": "Description of use case 1"},
+      {"title": "Use case 2", "description": "Description of use case 2"}
+      ]'
+    form: llm
+    label:
+      en_US: Use Cases
+    human_description:
+      en_US: A list of use cases. list of dict which contains title and description k,v pairs.

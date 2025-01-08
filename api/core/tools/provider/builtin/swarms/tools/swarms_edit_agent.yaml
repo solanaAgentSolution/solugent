@@ -1,0 +1,97 @@
+identity:
+  name: swarms_edit_agent
+  author: GeoAI
+  label:
+    en_US: Swarms Edit Agent
+description:
+  human:
+    en_US: Edit an existing agent on swarms.world.
+  llm: Edit an existing agent on swarms.world.
+parameters:
+  - name: id
+    type: string
+    required: true
+    llm_description: The ID of the agent to be edited.
+    form: llm
+    label:
+      en_US: Agent ID
+    human_description:
+      en_US: The unique ID of the agent that needs to be edited.
+
+  - name: name
+    type: string
+    required: true
+    llm_description: The updated name of the agent.
+    form: llm
+    label:
+      en_US: Updated Agent Name
+    human_description:
+      en_US: The updated name for the agent.
+
+  - name: agent
+    type: string
+    required: true
+    llm_description: The updated agent text.
+    form: llm
+    label:
+      en_US: Updated Agent Text
+    human_description:
+      en_US: The updated text content of the agent.
+
+  - name: description
+    type: string
+    required: true
+    llm_description: A brief updated description of the agent.
+    form: llm
+    label:
+      en_US: Updated Description
+    human_description:
+      en_US: An updated short description for the agent.
+
+  - name: language
+    type: string
+    required: false
+    llm_description: The updated agent's syntax language.
+    form: llm
+    label:
+      en_US: Updated Language
+    human_description:
+      en_US: The new language associated with the agent.
+
+  - name: use_cases
+    type: string
+    required: true
+    llm_description: >
+      A list of updated use cases for the agent. in the format of json string. like '[
+      {"title": "Use case 1", "description": "Description of use case 1"},
+      {"title": "Use case 2", "description": "Description of use case 2"}
+      ]'
+    form: llm
+    label:
+      en_US: Updated Use Cases
+    human_description:
+      en_US: An array of updated use cases. For each, provide title and description.
+
+  - name: requirements
+    type: string
+    required: true
+    llm_description: >
+      A list of requirements for the agent. in the format of json string. like '[
+      {"package": "pip", "installation": "pip install"},
+      {"package": "pip3", "installation": "pip3 install"}
+      ]'
+    form: llm
+    label:
+      en_US: Updated Requirements
+    human_description:
+      en_US: An array of updated requirements. For each, provide package and installation.
+
+  - name: tags
+    type: string
+    required: false
+    llm_description: Updated comma-separated tags associated with the agent.
+    form: llm
+    label:
+      en_US: Updated Tags
+    human_description:
+      en_US: Updated comma-separated tags for the agent.

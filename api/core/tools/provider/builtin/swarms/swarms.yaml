@@ -1,0 +1,22 @@
+identity:
+  author: GeoAI
+  name: swarms
+  label:
+    en_US: swarms API
+    zh_Hans: swarms API
+  description:
+    en_US: A module for interacting with the swarms api.
+  icon: icon.png
+  tags:
+    - productivity
+credentials_for_provider:
+  swarms_api_key:
+    type: text-input
+    required: true
+    label:
+      en_US: swarms API Key
+    placeholder:
+      en_US: Please input your swarms API key
+    help:
+      en_US: Get your API key from the swarms platform.
+    url: https://docs.swarms.world/en/latest/swarms_platform/#api-key-generation

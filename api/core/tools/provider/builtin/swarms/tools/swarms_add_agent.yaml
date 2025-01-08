@@ -1,0 +1,88 @@
+identity:
+  name: swarms_add_agent
+  author: GeoAI
+  label:
+    en_US: Swarms Add Agent
+description:
+  human:
+    en_US: Add a new agent to swarms.world.
+  llm: Add a new agent to swarms.world.
+parameters:
+  - name: name
+    type: string
+    required: true
+    llm_description: The name of the agent.
+    form: llm
+    label:
+      en_US: Agent Name
+    human_description:
+      en_US: The name of the agent.
+
+  - name: agent
+    type: string
+    required: true
+    llm_description: The agent text.
+    form: llm
+    label:
+      en_US: Agent Text
+    human_description:
+      en_US: The text content of the agent.
+
+  - name: description
+    type: string
+    required: true
+    llm_description: The brief description of the agent.
+    form: llm
+    label:
+      en_US: Description
+    human_description:
+      en_US: A short description for the agent.
+
+  - name: language
+    type: string
+    required: false
+    default: python
+    llm_description: The agent's syntax language (defaults to python).
+    form: llm
+    label:
+      en_US: Language
+    human_description:
+      en_US: The agent's syntax language.
+
+  - name: use_cases
+    type: string
+    required: true
+    llm_description: >
+      A list of use cases for the agent. in the format of json string. like '[
+      {"title": "Use case 1", "description": "Description of use case 1"},
+      {"title": "Use case 2", "description": "Description of use case 2"}
+      ]'
+    form: llm
+    label:
+      en_US: Use Cases
+    human_description:
+      en_US: An array of use cases. For each, provide title and description.
+
+  - name: requirements
+    type: string
+    required: true
+    llm_description: >
+      A list of requirements for the agent. in the format of json string. like '[
+      {"package": "pip", "installation": "pip install"},
+      {"package": "pip3", "installation": "pip3 install"}
+      ]'
+    form: llm
+    label:
+      en_US: Requirements
+    human_description:
+      en_US: An array of requirements. For each, provide package and installation keys.
+
+  - name: tags
+    type: string
+    required: true
+    llm_description: Comma-separated tags associated with the agent.
+    form: llm
+    label:
+      en_US: Tags
+    human_description:
+      en_US: Comma-separated tags for the agent.

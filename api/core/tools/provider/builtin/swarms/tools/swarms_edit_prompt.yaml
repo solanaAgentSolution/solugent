@@ -1,0 +1,73 @@
+identity:
+  name: swarms_edit_prompt
+  author: GeoAI
+  label:
+    en_US: Swarms Edit Prompt
+description:
+  human:
+    en_US: Edit an existing prompt on swarms.world.
+  llm: Edit an existing prompt on swarms.world.
+parameters:
+  - name: id
+    type: string
+    required: true
+    llm_description: The unique ID of the prompt to edit.
+    form: llm
+    label:
+      en_US: Prompt ID
+    human_description:
+      en_US: The ID of the prompt that needs to be updated.
+
+  - name: name
+    type: string
+    required: true
+    llm_description: The updated name of the prompt.
+    form: llm
+    label:
+      en_US: Updated Prompt Name
+    human_description:
+      en_US: The new name for the prompt.
+
+  - name: prompt
+    type: string
+    required: true
+    llm_description: The updated text of the prompt.
+    form: llm
+    label:
+      en_US: Updated Prompt Text
+    human_description:
+      en_US: The new text content for the prompt.
+
+  - name: description
+    type: string
+    required: false
+    llm_description: The updated description of the prompt.
+    form: llm
+    label:
+      en_US: Updated Description
+    human_description:
+      en_US: The new description for the prompt.
+
+  - name: tags
+    type: string
+    required: false
+    llm_description: The updated tags associated with the prompt.
+    form: llm
+    label:
+      en_US: Updated Tags
+    human_description:
+      en_US: Any updated tags for the prompt, separated by commas.
+
+  - name: use_cases
+    type: string
+    required: false
+    llm_description: >
+      A list of updated use cases for the prompt. in the format of json string. like '[
+      {"title": "Updated Use case 1", "description": "Updated Description of use case 1"},
+      {"title": "Updated Use case 2", "description": "Updated Description of use case 2"}
+      ]'
+    form: llm
+    label:
+      en_US: Updated Use Cases
+    human_description:
+      en_US: A list of updated use cases. List of dict which contains title and description k,v pairs.
