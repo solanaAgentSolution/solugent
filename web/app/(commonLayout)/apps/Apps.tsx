@@ -85,7 +85,7 @@ const Apps = () => {
   ]
 
   useEffect(() => {
-    document.title = `${t('common.menus.apps')} -  geo`
+    document.title = `${t('common.menus.apps')} -  Solugent`
     if (localStorage.getItem(NEED_REFRESH_APP_LIST_KEY) === '1') {
       localStorage.removeItem(NEED_REFRESH_APP_LIST_KEY)
       mutate()

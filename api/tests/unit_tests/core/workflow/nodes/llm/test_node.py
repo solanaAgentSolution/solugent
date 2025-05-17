@@ -251,7 +251,7 @@ def test_fetch_prompt_messages__vison_disabled(faker, llm_node, model_config):
 
 
 def test_fetch_prompt_messages__basic(faker, llm_node, model_config):
-    # Setup geo config
+    # Setup solugent config
     geo_config.MULTIMODAL_SEND_FORMAT = "url"
 
     # Generate fake values for prompt template

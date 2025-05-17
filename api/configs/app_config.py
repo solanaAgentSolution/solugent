@@ -62,7 +62,7 @@ class geoConfig(
     # Remote source configs
     RemoteSettingsSourceConfig,
     # Enterprise feature configs
-    # **Before using, please contact business@geoaipower.com by email to inquire about licensing matters.**
+    # **Before using, please contact business@solugent.org by email to inquire about licensing matters.**
     EnterpriseFeatureConfig,
 ):
     model_config = SettingsConfigDict(

@@ -34,7 +34,7 @@ const DefaultValue = ({
         {t('workflow.nodes.common.errorHandle.defaultValue.desc')}
         &nbsp;
         <a
-          href='https://docs.geoaipower.com/guides/workflow/error-handling'
+          href='https://docs.solugent.org/guides/workflow/error-handling'
           target='_blank'
           className='text-text-accent'
         >

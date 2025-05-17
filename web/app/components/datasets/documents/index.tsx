@@ -243,7 +243,7 @@ const Documents: FC<IDocumentsProps> = ({ datasetId }) => {
           <a
             className='flex items-center text-text-accent'
             target='_blank'
-            href='https://docs.geoaipower.com/guides/knowledge-base/integrate-knowledge-within-application'>
+            href='https://docs.solugent.org/guides/knowledge-base/integrate-knowledge-within-application'>
             <span>{t('datasetDocuments.list.learnMore')}</span>
             <RiExternalLinkLine className='w-3 h-3' />
           </a>

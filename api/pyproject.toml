@@ -1,5 +1,5 @@
 [project]
-name = "geo-api"
+name = "solugent-api"
 requires-python = ">=3.11,<3.13"
 
 [build-system]

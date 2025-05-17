@@ -1,6 +1,6 @@
 export { default as D } from './D'
 export { default as DiagonalDividingLine } from './DiagonalDividingLine'
-export { default as Geo } from './Geo'
+export { default as Solugent } from './Geo'
 export { default as Github } from './Github'
 export { default as Line3 } from './Line3'
 export { default as Lock } from './Lock'

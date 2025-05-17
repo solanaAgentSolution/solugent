@@ -1,7 +1,7 @@
 const translation = {
   title: 'Tools',
   createCustomTool: 'Create Custom Tool',
-  customToolTip: 'Learn more about geo custom tools',
+  customToolTip: 'Learn more about Solugent custom tools',
   type: {
     all: 'All',
     builtIn: 'Built-in',
@@ -10,7 +10,7 @@ const translation = {
   },
   contribute: {
     line1: 'I\'m interested in ',
-    line2: 'contributing tools to geo.',
+    line2: 'contributing tools to Solugent.',
     viewGuide: 'View the guide',
   },
   author: 'By',

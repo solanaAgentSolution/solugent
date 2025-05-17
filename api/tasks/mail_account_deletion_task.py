@@ -27,7 +27,7 @@ def send_deletion_success_task(to):
             to=to,
             email=to,
         )
-        mail.send(to=to, subject="Your geoaipower.com Account Has Been Successfully Deleted", html=html_content)
+        mail.send(to=to, subject="Your solugent.org Account Has Been Successfully Deleted", html=html_content)
 
         end_at = time.perf_counter()
         logging.info(
@@ -55,7 +55,7 @@ def send_account_deletion_verification_code(to, code):
 
     try:
         html_content = render_template("delete_account_code_email_template_en-US.html", to=to, code=code)
-        mail.send(to=to, subject="geoaipower.com Account Deletion and Verification", html=html_content)
+        mail.send(to=to, subject="solugent.org Account Deletion and Verification", html=html_content)
 
         end_at = time.perf_counter()
         logging.info(

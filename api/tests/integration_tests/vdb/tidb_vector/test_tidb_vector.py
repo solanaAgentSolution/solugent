@@ -15,7 +15,7 @@ def tidb_vector():
             user="root",
             password="",
             database="test",
-            program_name="geoaipower/geo",
+            program_name="solugent/solugent",
         ),
     )
 

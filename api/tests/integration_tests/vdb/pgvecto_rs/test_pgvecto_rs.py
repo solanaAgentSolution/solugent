@@ -15,8 +15,8 @@ class PGVectoRSVectorTest(AbstractVectorTest):
                 host="localhost",
                 port=5431,
                 user="postgres",
-                password="geoai123456",
-                database="geo",
+                password="solugent123456",
+                database="solugent",
             ),
             dim=128,
         )

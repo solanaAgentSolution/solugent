@@ -811,7 +811,7 @@ class RegisterService:
     @classmethod
     def setup(cls, email: str, name: str, password: str, ip_address: str) -> None:
         """
-        Setup geo
+        Setup Solugent
 
         :param email: email
         :param name: username
@@ -931,7 +931,7 @@ class RegisterService:
             language=account.interface_language,
             to=email,
             token=token,
-            inviter_name=inviter.name if inviter else "geo",
+            inviter_name=inviter.name if inviter else "Solugent",
             workspace_name=tenant.name,
         )
 

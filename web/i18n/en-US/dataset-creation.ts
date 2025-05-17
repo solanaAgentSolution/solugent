@@ -71,7 +71,7 @@ const translation = {
       run: 'Run',
       firecrawlTitle: 'Extract web content with 🔥Firecrawl',
       firecrawlDoc: 'Firecrawl docs',
-      firecrawlDocLink: 'https://docs.geoaipower.com/guides/knowledge-base/sync-from-website',
+      firecrawlDocLink: 'https://docs.solugent.org/guides/knowledge-base/sync-from-website',
       jinaReaderTitle: 'Convert the entire site to Markdown',
       jinaReaderDoc: 'Learn more about Jina Reader',
       jinaReaderDocLink: 'https://jina.ai/reader',
@@ -196,7 +196,7 @@ const translation = {
   },
   otherDataSource: {
     title: 'Connect to other data sources?',
-    description: 'Currently, geo\'s knowledge base only has limited data sources. Contributing a data source to the geo knowledge base is a fantastic way to help enhance the platform\'s flexibility and power for all users. Our contribution guide makes it easy to get started. Please click on the link below to learn more.',
+    description: 'Currently, Solugent\'s knowledge base only has limited data sources. Contributing a data source to the Solugent knowledge base is a fantastic way to help enhance the platform\'s flexibility and power for all users. Our contribution guide makes it easy to get started. Please click on the link below to learn more.',
     learnMore: 'Learn more',
   },
 }

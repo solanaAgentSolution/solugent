@@ -83,7 +83,7 @@ def test_flask_configs(example_env_file):
     # fallback to alias choices value as CONSOLE_API_URL
     assert config["FILES_URL"] == "https://example.com"
 
-    assert config["SQLALCHEMY_DATABASE_URI"] == "postgresql://postgres:@localhost:5432/geo"
+    assert config["SQLALCHEMY_DATABASE_URI"] == "postgresql://postgres:@localhost:5432/solugent"
     assert config["SQLALCHEMY_ENGINE_OPTIONS"] == {
         "connect_args": {
             "options": "-c timezone=UTC",

@@ -16,7 +16,7 @@ const translation = {
     },
   },
   apps: {
-    title: 'Explore Apps by geo',
+    title: 'Explore Apps by Solugent',
     description: 'Use these template apps instantly or customize your own apps based on the templates.',
     allCategories: 'Recommended',
   },

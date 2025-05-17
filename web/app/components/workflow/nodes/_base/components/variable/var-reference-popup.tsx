@@ -47,7 +47,7 @@ const VarReferencePopup: FC<Props> = ({
                 {t('workflow.variableReference.assignedVarsDescription')}
                 <a target='_blank' rel='noopener noreferrer'
                   className='text-text-accent-secondary'
-                  href={locale !== LanguagesSupported[1] ? 'https://docs.geoaipower.com/guides/workflow/variables#conversation-variables' : `https://docs.geoaipower.com/${locale.toLowerCase()}/guides/workflow/variables#hui-hua-bian-liang`}>{t('workflow.variableReference.conversationVars')}</a>
+                  href={locale !== LanguagesSupported[1] ? 'https://docs.solugent.org/guides/workflow/variables#conversation-variables' : `https://docs.solugent.org/${locale.toLowerCase()}/guides/workflow/variables#hui-hua-bian-liang`}>{t('workflow.variableReference.conversationVars')}</a>
               </div>}
             />
           ))

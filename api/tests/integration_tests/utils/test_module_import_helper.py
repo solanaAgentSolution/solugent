@@ -30,5 +30,5 @@ def test_lazy_loading_subclass_from_source():
         parent_type=ParentClass,
         use_lazy_loader=True,
     )
-    instance = clz("geo")
-    assert instance.get_name() == "geo"
+    instance = clz("Solugent")
+    assert instance.get_name() == "Solugent"

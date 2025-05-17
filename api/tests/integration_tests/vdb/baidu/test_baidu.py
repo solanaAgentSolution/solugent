@@ -7,12 +7,12 @@ class BaiduVectorTest(AbstractVectorTest):
     def __init__(self):
         super().__init__()
         self.vector = BaiduVector(
-            "geo",
+            "solugent",
             BaiduConfig(
                 endpoint="http://127.0.0.1:5287",
                 account="root",
-                api_key="geo",
-                database="geo",
+                api_key="solugent",
+                database="solugent",
                 shard=1,
                 replicas=3,
             ),

@@ -113,7 +113,7 @@ class MessageCycleManage:
             account = annotation.account
             self._task_state.metadata["annotation_reply"] = {
                 "id": annotation.id,
-                "account": {"id": annotation.account_id, "name": account.name if account else "geo user"},
+                "account": {"id": annotation.account_id, "name": account.name if account else "Solugent user"},
             }
 
             return annotation

@@ -35,6 +35,6 @@ def init_app(app: geoApp):
             traces_sample_rate=geo_config.SENTRY_TRACES_SAMPLE_RATE,
             profiles_sample_rate=geo_config.SENTRY_PROFILES_SAMPLE_RATE,
             environment=geo_config.DEPLOY_ENV,
-            release=f"geo-{geo_config.CURRENT_VERSION}-{geo_config.COMMIT_SHA}",
+            release=f"Solugent-{geo_config.CURRENT_VERSION}-{geo_config.COMMIT_SHA}",
             before_send=before_send,
         )

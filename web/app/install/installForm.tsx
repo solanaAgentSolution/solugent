@@ -160,7 +160,7 @@ const InstallForm = () => {
               <Link
                 className='text-primary-600'
                 target='_blank' rel='noopener noreferrer'
-                href={'https://docs.geoaipower.com/user-agreement/open-source'}
+                href={'https://docs.solugent.org/user-agreement/open-source'}
               >{t('login.license.link')}</Link>
             </div>
           </div>

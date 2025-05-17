@@ -48,7 +48,7 @@ const ChatWithHistory: FC<ChatWithHistoryProps> = ({
       if (customConfig)
         document.title = `${site.title}`
       else
-        document.title = `${site.title} - Powered by geo`
+        document.title = `${site.title} - Powered by Solugent`
     }
   }, [site, customConfig, themeBuilder])
 

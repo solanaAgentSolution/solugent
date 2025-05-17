@@ -16,7 +16,7 @@ class PGVectorTest(AbstractVectorTest):
                 port=5433,
                 user="postgres",
                 password="geoai123456",
-                database="geo",
+                database="Solugent",
                 min_connection=1,
                 max_connection=5,
             ),

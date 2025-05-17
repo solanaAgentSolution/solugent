@@ -31,7 +31,7 @@ class RerankModelRunner(BaseRerankRunner):
         unique_documents = []
         for document in documents:
             if (
-                document.provider == "geo"
+                document.provider == "Solugent"
                 and document.metadata is not None
                 and document.metadata["doc_id"] not in doc_ids
             ):

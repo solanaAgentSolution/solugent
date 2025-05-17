@@ -15,8 +15,8 @@ class OracleVectorTest(AbstractVectorTest):
             config=OracleVectorConfig(
                 host="localhost",
                 port=1521,
-                user="geo",
-                password="geo",
+                user="solugent",
+                password="solugent",
                 database="FREEPDB1",
             ),
         )

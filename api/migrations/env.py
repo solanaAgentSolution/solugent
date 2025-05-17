@@ -92,6 +92,7 @@ def run_migrations_online():
                 logger.info('No changes in schema detected.')
 
     connectable = get_engine()
+    logger.info(f"Running migrations online with engine: {get_engine_url()}")
 
     with connectable.connect() as connection:
         context.configure(

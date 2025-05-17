@@ -8,7 +8,7 @@ import './styles/globals.css'
 import './styles/markdown.scss'
 
 export const metadata = {
-  title: 'geo',
+  title: 'Solugent',
 }
 
 export const viewport: Viewport = {

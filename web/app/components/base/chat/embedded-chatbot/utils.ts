@@ -1,3 +1,3 @@
 export const isgeo = () => {
-  return document.referrer.includes('geoaipower.com')
+  return document.referrer.includes('solugent.org')
 }

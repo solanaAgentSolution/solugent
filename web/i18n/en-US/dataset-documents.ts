@@ -1,7 +1,7 @@
 const translation = {
   list: {
     title: 'Documents',
-    desc: 'All files of the Knowledge are shown here, and the entire Knowledge can be linked to geo citations or indexed via the Chat plugin.',
+    desc: 'All files of the Knowledge are shown here, and the entire Knowledge can be linked to Solugent citations or indexed via the Chat plugin.',
     learnMore: 'Learn more',
     addFile: 'Add file',
     addPages: 'Add Pages',
@@ -54,7 +54,7 @@ const translation = {
         tip: 'You can upload files, sync from the website, or from webb apps like Notion, GitHub, etc.',
       },
       sync: {
-        tip: 'geo will periodically download files from your Notion and complete processing.',
+        tip: 'Solugent will periodically download files from your Notion and complete processing.',
       },
     },
     delete: {

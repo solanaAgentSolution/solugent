@@ -6,7 +6,7 @@ const translation = {
   },
   webapp: {
     title: 'Customize WebApp brand',
-    removeBrand: 'Remove Powered by geo',
+    removeBrand: 'Remove Powered by Solugent',
     changeLogo: 'Change Powered by Brand Image',
     changeLogoTip: 'SVG or PNG format with a minimum size of 40x40px',
   },

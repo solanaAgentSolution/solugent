@@ -1,6 +1,6 @@
 # Tools
 
-This module implements built-in tools used in Agent Assistants and Workflows within geo. You could define and display your own tools in this module, without mogeoing the frontend logic. This decoupling allows for easier horizontal scaling of geo's capabilities.
+This module implements built-in tools used in Agent Assistants and Workflows within solugent. You could define and display your own tools in this module, without mogeoing the frontend logic. This decoupling allows for easier horizontal scaling of solugent's capabilities.
 
 ## Feature Introduction
 

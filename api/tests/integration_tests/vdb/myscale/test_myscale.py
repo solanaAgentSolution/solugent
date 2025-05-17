@@ -15,7 +15,7 @@ class MyScaleVectorTest(AbstractVectorTest):
                 port=8123,
                 user="default",
                 password="",
-                database="geo",
+                database="solugent",
                 fts_params="",
             ),
         )

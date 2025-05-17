@@ -75,7 +75,7 @@ def send_document_clean_notify_task():
                         url=url,
                     )
                     mail.send(
-                        to=account.email, subject="geo Knowledge base auto disable notification", html=html_content
+                        to=account.email, subject="Solugent Knowledge base auto disable notification", html=html_content
                     )
 
             # update notified to True

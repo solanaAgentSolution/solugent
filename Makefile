@@ -1,7 +1,7 @@
 # Variables
-DOCKER_REGISTRY=geoaipower
-WEB_IMAGE=$(DOCKER_REGISTRY)/geo-web
-API_IMAGE=$(DOCKER_REGISTRY)/geo-api
+DOCKER_REGISTRY=solugent
+WEB_IMAGE=$(DOCKER_REGISTRY)/solugent-web
+API_IMAGE=$(DOCKER_REGISTRY)/solugent-api
 VERSION=latest
 
 # Build Docker images

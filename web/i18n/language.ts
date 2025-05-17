@@ -28,7 +28,7 @@ export const NOTICE_I18N = {
   },
   desc: {
     en_US:
-      'Our system will be unavailable from 19:00 to 24:00 UTC on August 28 for an upgrade. For questions, kindly contact our support team (support@geoaipower.com). We value your patience.'
+      'Our system will be unavailable from 19:00 to 24:00 UTC on August 28 for an upgrade. For questions, kindly contact our support team (support@solugent.org). We value your patience.'
   },
   href: '#',
 }

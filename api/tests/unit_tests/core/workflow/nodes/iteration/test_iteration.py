@@ -150,7 +150,7 @@ def test_run():
     # construct variable pool
     pool = VariablePool(
         system_variables={
-            SystemVariableKey.QUERY: "geo",
+            SystemVariableKey.QUERY: "solugent",
             SystemVariableKey.FILES: [],
             SystemVariableKey.CONVERSATION_ID: "abababa",
             SystemVariableKey.USER_ID: "1",
@@ -158,7 +158,7 @@ def test_run():
         user_inputs={},
         environment_variables=[],
     )
-    pool.add(["pe", "list_output"], ["geo-1", "geo-2"])
+    pool.add(["pe", "list_output"], ["solugent-1", "solugent-2"])
 
     iteration_node = IterationNode(
         id=str(uuid.uuid4()),
@@ -182,8 +182,8 @@ def test_run():
     def tt_generator(self):
         return NodeRunResult(
             status=WorkflowNodeExecutionStatus.SUCCEEDED,
-            inputs={"iterator_selector": "geo"},
-            outputs={"output": "geo 123"},
+            inputs={"iterator_selector": "solugent"},
+            outputs={"output": "solugent 123"},
         )
 
     with patch.object(TemplateTransformNode, "_run", new=tt_generator):
@@ -196,7 +196,7 @@ def test_run():
             count += 1
             if isinstance(item, RunCompletedEvent):
                 assert item.run_result.status == WorkflowNodeExecutionStatus.SUCCEEDED
-                assert item.run_result.outputs == {"output": ["geo 123", "geo 123"]}
+                assert item.run_result.outputs == {"output": ["solugent 123", "solugent 123"]}
 
         assert count == 20
 
@@ -367,7 +367,7 @@ def test_run_parallel():
     # construct variable pool
     pool = VariablePool(
         system_variables={
-            SystemVariableKey.QUERY: "geo",
+            SystemVariableKey.QUERY: "solugent",
             SystemVariableKey.FILES: [],
             SystemVariableKey.CONVERSATION_ID: "abababa",
             SystemVariableKey.USER_ID: "1",
@@ -375,7 +375,7 @@ def test_run_parallel():
         user_inputs={},
         environment_variables=[],
     )
-    pool.add(["pe", "list_output"], ["geo-1", "geo-2"])
+    pool.add(["pe", "list_output"], ["solugent-1", "solugent-2"])
 
     iteration_node = IterationNode(
         id=str(uuid.uuid4()),
@@ -399,8 +399,8 @@ def test_run_parallel():
     def tt_generator(self):
         return NodeRunResult(
             status=WorkflowNodeExecutionStatus.SUCCEEDED,
-            inputs={"iterator_selector": "geo"},
-            outputs={"output": "geo 123"},
+            inputs={"iterator_selector": "solugent"},
+            outputs={"output": "solugent 123"},
         )
 
     with patch.object(TemplateTransformNode, "_run", new=tt_generator):
@@ -412,7 +412,7 @@ def test_run_parallel():
             count += 1
             if isinstance(item, RunCompletedEvent):
                 assert item.run_result.status == WorkflowNodeExecutionStatus.SUCCEEDED
-                assert item.run_result.outputs == {"output": ["geo 123", "geo 123"]}
+                assert item.run_result.outputs == {"output": ["solugent 123", "solugent 123"]}
 
         assert count == 32
 
@@ -583,7 +583,7 @@ def test_iteration_run_in_parallel_mode():
     # construct variable pool
     pool = VariablePool(
         system_variables={
-            SystemVariableKey.QUERY: "geo",
+            SystemVariableKey.QUERY: "solugent",
             SystemVariableKey.FILES: [],
             SystemVariableKey.CONVERSATION_ID: "abababa",
             SystemVariableKey.USER_ID: "1",
@@ -591,7 +591,7 @@ def test_iteration_run_in_parallel_mode():
         user_inputs={},
         environment_variables=[],
     )
-    pool.add(["pe", "list_output"], ["geo-1", "geo-2"])
+    pool.add(["pe", "list_output"], ["solugent-1", "solugent-2"])
 
     parallel_iteration_node = IterationNode(
         id=str(uuid.uuid4()),
@@ -635,8 +635,8 @@ def test_iteration_run_in_parallel_mode():
     def tt_generator(self):
         return NodeRunResult(
             status=WorkflowNodeExecutionStatus.SUCCEEDED,
-            inputs={"iterator_selector": "geo"},
-            outputs={"output": "geo 123"},
+            inputs={"iterator_selector": "solugent"},
+            outputs={"output": "solugent 123"},
         )
 
     with patch.object(TemplateTransformNode, "_run", new=tt_generator):
@@ -653,7 +653,7 @@ def test_iteration_run_in_parallel_mode():
             parallel_arr.append(item)
             if isinstance(item, RunCompletedEvent):
                 assert item.run_result.status == WorkflowNodeExecutionStatus.SUCCEEDED
-                assert item.run_result.outputs == {"output": ["geo 123", "geo 123"]}
+                assert item.run_result.outputs == {"output": ["solugent 123", "solugent 123"]}
         assert count == 32
 
         for item in sequential_result:
@@ -661,7 +661,7 @@ def test_iteration_run_in_parallel_mode():
             count += 1
             if isinstance(item, RunCompletedEvent):
                 assert item.run_result.status == WorkflowNodeExecutionStatus.SUCCEEDED
-                assert item.run_result.outputs == {"output": ["geo 123", "geo 123"]}
+                assert item.run_result.outputs == {"output": ["solugent 123", "solugent 123"]}
         assert count == 64
 
 
@@ -807,7 +807,7 @@ def test_iteration_run_error_handle():
     # construct variable pool
     pool = VariablePool(
         system_variables={
-            SystemVariableKey.QUERY: "geo",
+            SystemVariableKey.QUERY: "solugent",
             SystemVariableKey.FILES: [],
             SystemVariableKey.CONVERSATION_ID: "abababa",
             SystemVariableKey.USER_ID: "1",

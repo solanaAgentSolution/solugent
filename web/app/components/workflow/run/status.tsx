@@ -134,7 +134,7 @@ const StatusPanel: FC<ResultProps> = ({
             <div className='system-xs-medium text-text-warning'>
               {error}
               <a
-                href='https://docs.geoaipower.com/guides/workflow/error-handling/error-type'
+                href='https://docs.solugent.org/guides/workflow/error-handling/error-type'
                 target='_blank'
                 className='text-text-accent'
               >

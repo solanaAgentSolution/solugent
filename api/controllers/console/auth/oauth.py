@@ -158,7 +158,7 @@ def _generate_account(provider: str, user_info: OAuthUserInfo):
     if not account:
         if not FeatureService.get_system_features().is_allow_register:
             raise AccountNotFoundError()
-        account_name = user_info.name or "geo"
+        account_name = user_info.name or "Solugent"
         account = RegisterService.register(
             email=user_info.email, name=account_name, password=None, open_id=user_info.id, provider=provider
         )

@@ -304,7 +304,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
           <p className={`mt-1 ${s.settingsTip} text-gray-500`}>
             <Trans
               i18nKey={`${prefixSettings}.more.privacyPolicyTip`}
-              components={{ privacyPolicyLink: <Link href={'https://docs.geoaipower.com/user-agreement/privacy-policy'} target='_blank' rel='noopener noreferrer' className='text-primary-600' /> }}
+              components={{ privacyPolicyLink: <Link href={'https://docs.solugent.org/user-agreement/privacy-policy'} target='_blank' rel='noopener noreferrer' className='text-primary-600' /> }}
             />
           </p>
           <Input

@@ -12,13 +12,13 @@ class TencentVectorTest(AbstractVectorTest):
     def __init__(self):
         super().__init__()
         self.vector = TencentVector(
-            "geo",
+            "Solugent",
             TencentConfig(
                 url="http://127.0.0.1",
-                api_key="geo",
+                api_key="Solugent",
                 timeout=30,
-                username="geo",
-                database="geo",
+                username="Solugent",
+                database="Solugent",
                 shard=1,
                 replicas=2,
             ),

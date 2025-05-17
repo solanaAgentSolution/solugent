@@ -17,7 +17,7 @@ const FailBranchCard = () => {
           {t('workflow.nodes.common.errorHandle.failBranch.customizeTip')}
           &nbsp;
           <a
-            href='https://docs.geoaipower.com/guides/workflow/error-handling'
+            href='https://docs.solugent.org/guides/workflow/error-handling'
             target='_blank'
             className='text-text-accent'
           >

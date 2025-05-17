@@ -9,8 +9,8 @@
 (function () {
   // Constants for DOM element IDs and configuration key
   const configKey = "geoChatbotConfig";
-  const buttonId = "geo-chatbot-bubble-button";
-  const iframeId = "geo-chatbot-bubble-window";
+  const buttonId = "Solugent-chatbot-bubble-button";
+  const iframeId = "Solugent-chatbot-bubble-window";
   const config = window[configKey];
 
   // SVG icons for open and close states
@@ -65,7 +65,7 @@
     function createIframe() {
       const iframe = document.createElement("iframe");
       iframe.allow = "fullscreen;microphone";
-      iframe.title = "geo chatbot bubble window";
+      iframe.title = "Solugent chatbot bubble window";
       iframe.id = iframeId;
       iframe.src = iframeUrl;
       iframe.style.cssText = `

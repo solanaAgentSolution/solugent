@@ -80,7 +80,7 @@ const NewFeaturePanel = ({
                   <span>{isChatMode ? t('workflow.common.fileUploadTip') : t('workflow.common.ImageUploadLegacyTip')}</span>
                   <a
                     className='text-text-accent'
-                    href={`https://docs.geoaipower.com/${locale === LanguagesSupported[1] ? 'v/zh-hans/' : ''}guides/workflow/bulletin`}
+                    href={`https://docs.solugent.org/${locale === LanguagesSupported[1] ? 'v/zh-hans/' : ''}guides/workflow/bulletin`}
                     target='_blank' rel='noopener noreferrer'
                   >{t('workflow.common.featuresDocLink')}</a>
                 </div>

@@ -6,7 +6,7 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
 <div>
   ### Authentication
 
-  Service API of geo authenticates using an `API-Key`.
+  Service API of Solugent authenticates using an `API-Key`.
 
   It is suggested that developers store the `API-Key` in the backend instead of sharing or storing it in the client side to avoid the leakage of the `API-Key`, which may lead to property loss.
 
@@ -209,7 +209,7 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
     ```bash {{ title: 'cURL' }}
     curl --location --request POST '${props.apiBaseUrl}/datasets/{dataset_id}/document/create-by-file' \
     --header 'Authorization: Bearer {api_key}' \
-    --form 'data="{\"name\":\"geo\",\"indexing_technique\":\"high_quality\",\"process_rule\":{\"rules\":{\"pre_processing_rules\":[{\"id\":\"remove_extra_spaces\",\"enabled\":true},{\"id\":\"remove_urls_emails\",\"enabled\":true}],\"segmentation\":{\"separator\":\"###\",\"max_tokens\":500}},\"mode\":\"custom\"}}";type=text/plain' \
+    --form 'data="{\"name\":\"Solugent\",\"indexing_technique\":\"high_quality\",\"process_rule\":{\"rules\":{\"pre_processing_rules\":[{\"id\":\"remove_extra_spaces\",\"enabled\":true},{\"id\":\"remove_urls_emails\",\"enabled\":true}],\"segmentation\":{\"separator\":\"###\",\"max_tokens\":500}},\"mode\":\"custom\"}}";type=text/plain' \
     --form 'file=@"/path/to/file"'
     ```
     </CodeGroup>

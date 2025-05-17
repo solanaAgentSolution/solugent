@@ -49,10 +49,10 @@ const OPTION_MAP = {
  defer>
 </script>
 <style>
-  #geo-chatbot-bubble-button {
+  #Solugent-chatbot-bubble-button {
     background-color: ${primaryColor} !important;
   }
-  #geo-chatbot-bubble-window {
+  #Solugent-chatbot-bubble-window {
     width: 24rem !important;
     height: 40rem !important;
   }
@@ -103,7 +103,7 @@ const Embedded = ({ siteInfo, isShow, onClose, appBaseUrl, accessToken, classNam
   }
 
   const navigateToChromeUrl = () => {
-    window.open('https://chrome.google.com/webstore/detail/geo-chatbot/ceehdapohffmjmkdcifjofadiaoeggaf', '_blank')
+    window.open('https://chrome.google.com/webstore/detail/Solugent-chatbot/ceehdapohffmjmkdcifjofadiaoeggaf', '_blank')
   }
 
   useEffect(() => {

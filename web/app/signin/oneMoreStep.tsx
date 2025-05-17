@@ -90,7 +90,7 @@ const OneMoreStep = () => {
                   <div className='w-[256px] text-xs font-medium'>
                     <div className='font-medium'>{t('login.sendUsMail')}</div>
                     <div className='text-xs font-medium cursor-pointer text-text-accent-secondary'>
-                      <a href="mailto:request-invitation@geoaipower.ai">request-invitation@geoaipower.ai</a>
+                      <a href="mailto:request-invitation@solugent.ai">request-invitation@solugent.ai</a>
                     </div>
                   </div>
                 }
@@ -157,7 +157,7 @@ const OneMoreStep = () => {
             <Link
               className='system-xs-medium text-text-accent-secondary'
               target='_blank' rel='noopener noreferrer'
-              href={'https://docs.geoaipower.com/user-agreement/open-source'}
+              href={'https://docs.solugent.org/user-agreement/open-source'}
             >{t('login.license.link')}</Link>
           </div>
         </div>

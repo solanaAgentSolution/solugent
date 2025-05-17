@@ -34,7 +34,7 @@
                     },
                     "app_id": "a23b57fa-85da-49c0-a571-3aff375976c1",
                     "category": "Agent",
-                    "copyright": "geoaipower.com",
+                    "copyright": "solugent.org",
                     "description": "Welcome to your personalized Investment Analysis Copilot service, where we delve into the depths of stock analysis to provide you with comprehensive insights. \n",
                     "is_listed": true,
                     "position": 10,
@@ -66,11 +66,11 @@
                     },
                     "app_id": "d077d587-b072-4f2c-b631-69ed1e7cdc0f",
                     "category": "Programming",
-                    "copyright": "Copyright 2023 geo",
+                    "copyright": "Copyright 2023 Solugent",
                     "description": "Code interpreter, clarifying the syntax and semantics of the code.",
                     "is_listed": true,
                     "position": 13,
-                    "privacy_policy": "https://geoaipower.com"
+                    "privacy_policy": "https://solugent.org"
                 },
                 {
                     "app": {
@@ -98,7 +98,7 @@
                     },
                     "app_id": "be591209-2ca8-410f-8f3b-ca0e530dd638",
                     "category": "Agent",
-                    "copyright": "geoaipower.com",
+                    "copyright": "solugent.org",
                     "description": "I am a YouTube Channel Data Analysis Copilot, I am here to provide expert data analysis tailored to your needs. ",
                     "is_listed": true,
                     "position": 6,
@@ -114,11 +114,11 @@
                     },
                     "app_id": "7e8ca1ae-02f2-4b5f-979e-62d19133bee2",
                     "category": "Assistant",
-                    "copyright": "Copyright 2023 geo",
+                    "copyright": "Copyright 2023 Solugent",
                     "description": "I can answer your questions related to strategic marketing.",
                     "is_listed": true,
                     "position": 10,
-                    "privacy_policy": "https://geoaipower.com"
+                    "privacy_policy": "https://solugent.org"
                 },
                 {
                     "app": {

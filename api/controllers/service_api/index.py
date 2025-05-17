@@ -7,7 +7,7 @@ from controllers.service_api import api
 class IndexApi(Resource):
     def get(self):
         return {
-            "welcome": "geo OpenAPI",
+            "welcome": "Solugent OpenAPI",
             "api_version": "v1",
             "server_version": geo_config.CURRENT_VERSION,
         }

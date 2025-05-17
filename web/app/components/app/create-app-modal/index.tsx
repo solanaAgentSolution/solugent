@@ -312,17 +312,17 @@ function AppPreview({ mode }: { mode: AppMode }) {
     'chat': {
       title: t('app.types.chatbot'),
       description: t('app.newApp.chatbotUserDescription'),
-      link: 'https://docs.geoaipower.com/guides/application-orchestrate/conversation-application?fallback=true',
+      link: 'https://docs.solugent.org/guides/application-orchestrate/conversation-application?fallback=true',
     },
     'advanced-chat': {
       title: t('app.types.advanced'),
       description: t('app.newApp.advancedUserDescription'),
-      link: 'https://docs.geoaipower.com/guides/workflow',
+      link: 'https://docs.solugent.org/guides/workflow',
     },
     'agent-chat': {
       title: t('app.types.agent'),
       description: t('app.newApp.agentUserDescription'),
-      link: 'https://docs.geoaipower.com/guides/application-orchestrate/agent',
+      link: 'https://docs.solugent.org/guides/application-orchestrate/agent',
     },
     'completion': {
       title: t('app.newApp.completeApp'),
@@ -332,7 +332,7 @@ function AppPreview({ mode }: { mode: AppMode }) {
     'workflow': {
       title: t('app.types.workflow'),
       description: t('app.newApp.workflowUserDescription'),
-      link: 'https://docs.geoaipower.com/guides/workflow',
+      link: 'https://docs.solugent.org/guides/workflow',
     },
   }
   const previewInfo = modeToPreviewInfoMap[mode]

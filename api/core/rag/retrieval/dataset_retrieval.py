@@ -149,7 +149,7 @@ class DatasetRetrieval:
                 message_id,
             )
 
-        geo_documents = [item for item in all_documents if item.provider == "geo"]
+        geo_documents = [item for item in all_documents if item.provider == "Solugent"]
         external_documents = [item for item in all_documents if item.provider == "external"]
         document_context_list = []
         retrieval_resource_list = []
@@ -166,7 +166,7 @@ class DatasetRetrieval:
                 "content": item.page_content,
             }
             retrieval_resource_list.append(source)
-        # deal with geo documents
+        # deal with Solugent documents
         if geo_documents:
             records = RetrievalService.format_retrieval_documents(geo_documents)
             if records:
@@ -427,7 +427,7 @@ class DatasetRetrieval:
         self, documents: list[Document], message_id: Optional[str] = None, timer: Optional[dict] = None
     ) -> None:
         """Handle retrieval end."""
-        geo_documents = [document for document in documents if document.provider == "geo"]
+        geo_documents = [document for document in documents if document.provider == "Solugent"]
         for document in geo_documents:
             if document.metadata is not None:
                 query = db.session.query(DocumentSegment).filter(

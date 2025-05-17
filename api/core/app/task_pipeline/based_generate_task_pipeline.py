@@ -74,7 +74,7 @@ class BasedGenerateTaskPipeline:
         """
         if isinstance(e, QuotaExceededError):
             return (
-                "Your quota for geo Hosted Model Provider has been exhausted. "
+                "Your quota for Solugent Hosted Model Provider has been exhausted. "
                 "Please go to Settings -> Model Provider to complete your own provider credentials."
             )
 

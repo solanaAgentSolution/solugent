@@ -22,7 +22,7 @@ const Install = () => {
         <Header />
         <InstallForm />
         <div className='px-8 py-6 text-sm font-normal text-gray-500'>
-          © {new Date().getFullYear()} geoaipower, Inc. All rights reserved.
+          © {new Date().getFullYear()} solugent, Inc. All rights reserved.
         </div>
       </div>
     </div>

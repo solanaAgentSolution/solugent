@@ -39,14 +39,14 @@ export default function AccountAbout({
           <LogoSite className='mx-auto mb-2' />
           <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div>
           <div className='mb-4 text-center text-xs font-normal text-gray-700'>
-            <div>© {dayjs().year()} geoaipower, Inc., Contributors.</div>
+            <div>© {dayjs().year()} solugent, Inc., Contributors.</div>
             <div className='text-[#1C64F2]'>
               {
                 IS_CE_EDITION
-                  ? <Link href={'https://github.com/geoaipower/geo/blob/main/LICENSE'} target='_blank' rel='noopener noreferrer'>Open Source License</Link>
+                  ? <Link href={'https://github.com/solanaAgentSolution/solugent/blob/main/LICENSE'} target='_blank' rel='noopener noreferrer'>Open Source License</Link>
                   : <>
-                    <Link href='https://geoaipower.com/privacy' target='_blank' rel='noopener noreferrer'>Privacy Policy</Link>,<span> </span>
-                    <Link href='https://geoaipower.com/terms' target='_blank' rel='noopener noreferrer'>Terms of Service</Link>
+                    <Link href='https://solugent.org/privacy' target='_blank' rel='noopener noreferrer'>Privacy Policy</Link>,<span> </span>
+                    <Link href='https://solugent.org/terms' target='_blank' rel='noopener noreferrer'>Terms of Service</Link>
                   </>
               }
             </div>
@@ -64,7 +64,7 @@ export default function AccountAbout({
           <div className='flex items-center'>
             <Link
               className={classNames(buttonClassName, 'mr-2')}
-              href={'https://github.com/geoaipower/geo/releases'}
+              href={'https://github.com/solanaAgentSolution/solugent/releases'}
               target='_blank' rel='noopener noreferrer'
             >
               {t('common.about.changeLog')}

@@ -97,7 +97,7 @@ class XinferenceText2SpeechModel(TTSModel):
             self._tts_invoke_streaming(
                 model=model,
                 credentials=credentials,
-                content_text="Hello geo!",
+                content_text="Hello Solugent!",
                 voice=self._get_model_default_voice(model, credentials),
             )
         except Exception as ex:

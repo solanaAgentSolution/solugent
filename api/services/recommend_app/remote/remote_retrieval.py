@@ -13,14 +13,14 @@ logger = logging.getLogger(__name__)
 
 class RemoteRecommendAppRetrieval(RecommendAppRetrievalBase):
     """
-    Retrieval recommended app from geo official
+    Retrieval recommended app from Solugent official
     """
 
     def get_recommend_app_detail(self, app_id: str):
         try:
             result = self.fetch_recommended_app_detail_from_geo_official(app_id)
         except Exception as e:
-            logger.warning(f"fetch recommended app detail from geo official failed: {e}, switch to built-in.")
+            logger.warning(f"fetch recommended app detail from Solugent official failed: {e}, switch to built-in.")
             result = BuildInRecommendAppRetrieval.fetch_recommended_app_detail_from_builtin(app_id)
         return result
 
@@ -28,7 +28,7 @@ class RemoteRecommendAppRetrieval(RecommendAppRetrievalBase):
         try:
             result = self.fetch_recommended_apps_from_geo_official(language)
         except Exception as e:
-            logger.warning(f"fetch recommended apps from geo official failed: {e}, switch to built-in.")
+            logger.warning(f"fetch recommended apps from Solugent official failed: {e}, switch to built-in.")
             result = BuildInRecommendAppRetrieval.fetch_recommended_apps_from_builtin(language)
         return result
 
@@ -38,7 +38,7 @@ class RemoteRecommendAppRetrieval(RecommendAppRetrievalBase):
     @classmethod
     def fetch_recommended_app_detail_from_geo_official(cls, app_id: str) -> Optional[dict]:
         """
-        Fetch recommended app detail from geo official.
+        Fetch recommended app detail from Solugent official.
         :param app_id: App ID
         :return:
         """
@@ -53,7 +53,7 @@ class RemoteRecommendAppRetrieval(RecommendAppRetrievalBase):
     @classmethod
     def fetch_recommended_apps_from_geo_official(cls, language: str) -> dict:
         """
-        Fetch recommended apps from geo official.
+        Fetch recommended apps from Solugent official.
         :param language: language
         :return:
         """

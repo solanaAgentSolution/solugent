@@ -75,7 +75,7 @@ class CodeExecutionSandboxConfig(BaseSettings):
 
     CODE_EXECUTION_API_KEY: str = Field(
         description="API key for accessing the code execution service",
-        default="geo-sandbox",
+        default="Solugent-sandbox",
     )
 
     CODE_EXECUTION_CONNECT_TIMEOUT: Optional[float] = Field(
@@ -407,7 +407,7 @@ class UpdateConfig(BaseSettings):
 
     CHECK_UPDATE_URL: str = Field(
         description="URL to check for application updates",
-        default="https://updates.geoaipower.com",
+        default="https://updates.solugent.org",
     )
 
 
@@ -584,8 +584,8 @@ class RagEtlConfig(BaseSettings):
 
     # TODO: This config is not only for rag etl, it is also for file upload, we should move it to file upload config
     ETL_TYPE: str = Field(
-        description="RAG ETL type ('geo' or 'Unstructured'), default to 'geo'",
-        default="geo",
+        description="RAG ETL type ('Solugent' or 'Unstructured'), default to 'Solugent'",
+        default="Solugent",
     )
 
     KEYWORD_DATA_SOURCE_TYPE: str = Field(

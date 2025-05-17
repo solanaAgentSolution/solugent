@@ -217,7 +217,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
               className='resize-none'
               placeholder={t('datasetSettings.form.descPlaceholder') || ''}
             />
-            <a className='mt-2 flex items-center h-[18px] px-3 text-xs text-gray-500' href="https://docs.geoaipower.com/features/datasets#how-to-write-a-good-dataset-description" target='_blank' rel='noopener noreferrer'>
+            <a className='mt-2 flex items-center h-[18px] px-3 text-xs text-gray-500' href="https://docs.solugent.org/features/datasets#how-to-write-a-good-dataset-description" target='_blank' rel='noopener noreferrer'>
               <BookOpenIcon className='w-3 h-[18px] mr-1' />
               {t('datasetSettings.form.descWrite')}
             </a>
@@ -327,7 +327,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
               <div>
                 <div className='text-text-secondary system-sm-semibold'>{t('datasetSettings.form.retrievalSetting.title')}</div>
                 <div className='leading-[18px] text-xs font-normal text-gray-500'>
-                  <a target='_blank' rel='noopener noreferrer' href='https://docs.geoaipower.com/guides/knowledge-base/create-knowledge-and-upload-documents#id-4-retrieval-settings' className='text-[#155eef]'>{t('datasetSettings.form.retrievalSetting.learnMore')}</a>
+                  <a target='_blank' rel='noopener noreferrer' href='https://docs.solugent.org/guides/knowledge-base/create-knowledge-and-upload-documents#id-4-retrieval-settings' className='text-[#155eef]'>{t('datasetSettings.form.retrievalSetting.learnMore')}</a>
                   {t('datasetSettings.form.retrievalSetting.description')}
                 </div>
               </div>

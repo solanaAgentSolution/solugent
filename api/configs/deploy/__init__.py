@@ -9,7 +9,7 @@ class DeploymentConfig(BaseSettings):
 
     APPLICATION_NAME: str = Field(
         description="Name of the application, used for identification and logging purposes",
-        default="geoaipower/geo",
+        default="solugent/Solugent",
     )
 
     DEBUG: bool = Field(

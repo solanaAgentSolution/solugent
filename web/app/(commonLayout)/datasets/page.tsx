@@ -5,7 +5,7 @@ const AppList = async () => {
 }
 
 export const metadata = {
-  title: 'Datasets - geo',
+  title: 'Datasets - Solugent',
 }
 
 export default AppList

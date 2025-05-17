@@ -19,7 +19,7 @@ class AnalyticdbVectorOpenAPIConfig(BaseModel):
     instance_id: str
     account: str
     account_password: str
-    namespace: str = "geo"
+    namespace: str = "Solugent"
     namespace_password: Optional[str] = None
     metrics: str = "cosine"
     read_timeout: int = 60000
@@ -61,7 +61,7 @@ class AnalyticdbVectorOpenAPI:
             raise ImportError(_import_err_msg)
         self._collection_name = collection_name.lower()
         self.config = config
-        self._client_config = open_api_models.Config(user_agent="geo", **config.to_analyticdb_client_params())
+        self._client_config = open_api_models.Config(user_agent="Solugent", **config.to_analyticdb_client_params())
         self._client = Client(self._client_config)
         self._initialize()
 

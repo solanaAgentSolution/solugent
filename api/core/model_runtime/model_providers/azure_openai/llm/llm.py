@@ -484,7 +484,7 @@ class AzureOpenAILargeLanguageModel(_CommonAzureOpenAI, LargeLanguageModel):
                 continue
 
             delta = chunk.choices[0]
-            # NOTE: For fix https://github.com/geoaipower/geo/issues/5790
+            
             if delta.delta is None:
                 continue
 

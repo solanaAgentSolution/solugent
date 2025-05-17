@@ -30,7 +30,7 @@ class MockBaiduVectorDBClass:
         return [
             Database(
                 conn=self.conn,
-                database_name="geo",
+                database_name="Solugent",
                 config=self._config,
             )
         ]
@@ -64,7 +64,7 @@ class MockBaiduVectorDBClass:
             1,
             None,
             enable_dynamic_field=False,
-            description="table for geo",
+            description="table for Solugent",
             config=config,
             state=TableState.NORMAL,
         )

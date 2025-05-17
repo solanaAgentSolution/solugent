@@ -32,7 +32,7 @@ const UrlInput: FC<Props> = ({
       <Input
         value={url}
         onChange={handleUrlChange}
-        placeholder='https://docs.geoaipower.com'
+        placeholder='https://docs.solugent.org'
       />
       <Button
         variant='primary'

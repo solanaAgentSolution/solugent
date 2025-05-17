@@ -6,9 +6,9 @@ export const useNodeHelpLink = (nodeType: BlockEnum) => {
   const language = useGetLanguage()
   const prefixLink = useMemo(() => {
     if (language === 'zh_Hans')
-      return 'https://docs.geoaipower.com/v/zh-hans/guides/workflow/node/'
+      return 'https://docs.solugent.org/v/zh-hans/guides/workflow/node/'
 
-    return 'https://docs.geoaipower.com/guides/workflow/node/'
+    return 'https://docs.solugent.org/guides/workflow/node/'
   }, [language])
   const linkMap = useMemo(() => {
     if (language === 'zh_Hans') {

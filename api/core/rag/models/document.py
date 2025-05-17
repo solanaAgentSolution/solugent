@@ -30,7 +30,7 @@ class Document(BaseModel):
     """
     metadata: dict = {}
 
-    provider: Optional[str] = "geo"
+    provider: Optional[str] = "Solugent"
 
     children: Optional[list[ChildDocument]] = None
 

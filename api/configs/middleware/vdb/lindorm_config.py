@@ -22,7 +22,7 @@ class LindormConfig(BaseSettings):
         default=None,
     )
     DEFAULT_INDEX_TYPE: Optional[str] = Field(
-        description="Lindorm Vector Index Type, hnsw or flat is available in geo",
+        description="Lindorm Vector Index Type, hnsw or flat is available in Solugent",
         default="hnsw",
     )
     DEFAULT_DISTANCE_TYPE: Optional[str] = Field(

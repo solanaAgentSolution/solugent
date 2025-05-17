@@ -73,7 +73,7 @@ export default function InviteSettingsPage() {
       </div>
       <div className="w-full mx-auto mt-6">
         <Button variant='primary' className='w-full !text-sm'>
-          <a href="https://geoaipower.com">{t('login.explore')}</a>
+          <a href="https://solugent.org">{t('login.explore')}</a>
         </Button>
       </div>
     </div>
@@ -147,7 +147,7 @@ export default function InviteSettingsPage() {
       <Link
         className='system-xs-medium text-text-accent-secondary'
         target='_blank' rel='noopener noreferrer'
-        href={`https://docs.geoaipower.com/${language !== LanguagesSupported[1] ? 'user-agreement' : `v/${locale.toLowerCase()}/policies`}/open-source`}
+        href={`https://docs.solugent.org/${language !== LanguagesSupported[1] ? 'user-agreement' : `v/${locale.toLowerCase()}/policies`}/open-source`}
       >{t('login.license.link')}</Link>
     </div>
   </div>

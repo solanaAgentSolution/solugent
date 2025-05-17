@@ -111,7 +111,7 @@ class DatabaseConfig(BaseSettings):
 
     DB_DATABASE: str = Field(
         description="Name of the database to connect to.",
-        default="geo",
+        default="Solugent",
     )
 
     DB_CHARSET: str = Field(

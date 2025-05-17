@@ -21,7 +21,7 @@ else if (
 }
 else {
   // const domainParts = globalThis.location?.host?.split('.');
-  // in production env, the host is geo.app . In other env, the host is [dev].geo.app
+  // in production env, the host is Solugent.app . In other env, the host is [dev].Solugent.app
   // const env = domainParts.length === 2 ? 'ai' : domainParts?.[0];
   apiPrefix = 'http://localhost:5001/console/api'
   publicApiPrefix = 'http://localhost:5001/api' // avoid browser private mode api cross origin

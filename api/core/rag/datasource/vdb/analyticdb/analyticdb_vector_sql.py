@@ -18,7 +18,7 @@ class AnalyticdbVectorBySqlConfig(BaseModel):
     account_password: str
     min_connection: int
     max_connection: int
-    namespace: str = "geo"
+    namespace: str = "Solugent"
     metrics: str = "cosine"
 
     @model_validator(mode="before")

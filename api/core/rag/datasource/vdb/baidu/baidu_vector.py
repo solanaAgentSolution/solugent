@@ -253,7 +253,7 @@ class BaiduVector(BaseVector):
                 replication=self._client_config.replicas,
                 partition=Partition(partition_num=self._client_config.shard),
                 schema=Schema(fields=fields, indexes=indexes),
-                description="Table for geo",
+                description="Table for Solugent",
             )
 
             # Wait for table created

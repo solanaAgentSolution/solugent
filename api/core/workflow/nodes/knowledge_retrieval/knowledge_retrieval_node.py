@@ -193,7 +193,7 @@ class KnowledgeRetrievalNode(BaseNode[KnowledgeRetrievalNodeData]):
                 weights=weights,
                 reranking_enable=node_data.multiple_retrieval_config.reranking_enable,
             )
-        geo_documents = [item for item in all_documents if item.provider == "geo"]
+        geo_documents = [item for item in all_documents if item.provider == "Solugent"]
         external_documents = [item for item in all_documents if item.provider == "external"]
         retrieval_resource_list = []
         # deal with external documents
@@ -212,7 +212,7 @@ class KnowledgeRetrievalNode(BaseNode[KnowledgeRetrievalNodeData]):
                 "content": item.page_content,
             }
             retrieval_resource_list.append(source)
-        # deal with geo documents
+        # deal with Solugent documents
         if geo_documents:
             records = RetrievalService.format_retrieval_documents(geo_documents)
             if records:
@@ -312,7 +312,7 @@ class KnowledgeRetrievalNode(BaseNode[KnowledgeRetrievalNodeData]):
         if provider_model.status == ModelStatus.NO_CONFIGURE:
             raise ModelCredentialsNotInitializedError(f"Model {model_name} credentials is not initialized.")
         elif provider_model.status == ModelStatus.NO_PERMISSION:
-            raise ModelNotSupportedError(f"geo Hosted OpenAI {model_name} currently not support.")
+            raise ModelNotSupportedError(f"Solugent Hosted OpenAI {model_name} currently not support.")
         elif provider_model.status == ModelStatus.QUOTA_EXCEEDED:
             raise ModelQuotaExceededError(f"Model provider {provider_name} quota exceeded.")
 

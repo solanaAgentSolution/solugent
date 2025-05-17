@@ -99,7 +99,7 @@ def cloud_edition_billing_knowledge_limit_check(resource: str):
                     if features.billing.subscription.plan == "sandbox":
                         abort(
                             403,
-                            "To unlock this feature and elevate your geo experience, please upgrade to a paid plan.",
+                            "To unlock this feature and elevate your Solugent experience, please upgrade to a paid plan.",
                         )
                 else:
                     return view(*args, **kwargs)

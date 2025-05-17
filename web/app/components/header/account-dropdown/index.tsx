@@ -138,7 +138,7 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                         className={classNames(itemClassName, 'group justify-between',
                           active && 'bg-state-base-hover',
                         )}
-                        href='https://github.com/geoaipower/geo/discussions/categories/feedbacks'
+                        href='https://github.com/solanaAgentSolution/solugent/discussions/categories/feedbacks'
                         target='_blank' rel='noopener noreferrer'>
                         <div>{t('common.userProfile.communityFeedback')}</div>
                         <ArrowUpRight className='hidden w-[14px] h-[14px] text-text-tertiary group-hover:flex' />
@@ -161,7 +161,7 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                           active && 'bg-state-base-hover',
                         )}
                         href={
-                          locale !== LanguagesSupported[1] ? 'https://docs.geoaipower.com/' : `https://docs.geoaipower.com/v/${locale.toLowerCase()}/`
+                          locale !== LanguagesSupported[1] ? 'https://docs.solugent.org/' : `https://docs.solugent.org/v/${locale.toLowerCase()}/`
                         }
                         target='_blank' rel='noopener noreferrer'>
                         <div>{t('common.userProfile.helpCenter')}</div>
@@ -173,7 +173,7 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                         className={classNames(itemClassName, 'group justify-between',
                           active && 'bg-state-base-hover',
                         )}
-                        href='https://roadmap.geoaipower.com'
+                        href='https://roadmap.solugent.org'
                         target='_blank' rel='noopener noreferrer'>
                         <div>{t('common.userProfile.roadmap')}</div>
                         <ArrowUpRight className='hidden w-[14px] h-[14px] text-text-tertiary group-hover:flex' />

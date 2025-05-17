@@ -86,7 +86,7 @@ class VikingDBVector(BaseVector):
                 self._client.create_collection(
                     collection_name=self._collection_name,
                     fields=fields,
-                    description="Collection For geo",
+                    description="Collection For Solugent",
                 )
 
             if not self._has_index():
@@ -101,7 +101,7 @@ class VikingDBVector(BaseVector):
                     index_name=self._index_name,
                     vector_index=vector_index,
                     partition_by=vdb_Field.GROUP_KEY.value,
-                    description="Index For geo",
+                    description="Index For Solugent",
                 )
             redis_client.set(collection_exist_cache_key, 1, ex=3600)
 
