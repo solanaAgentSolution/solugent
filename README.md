@@ -1,5 +1,5 @@
 Our Official Website: [SoluGent](https://www.solugent.com)
-Don't trust any other website that claims to be us.
+Don't trust any other website that claims to be us. You can follow us in [X](https://x.com/solugent).
 
 SoluGent is an open-source LLM app development platform. Its intuitive interface combines agentic AI workflow, RAG pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype to production.
 
